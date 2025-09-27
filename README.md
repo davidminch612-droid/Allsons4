@@ -1,12 +1,11 @@
 html
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>All Sons IV Family Homes</title>
-
-  <!-- Import Old English / Gothic font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
   <style>
@@ -16,7 +15,6 @@ html
       background-image: url("image5.jpg");
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       font-family: Arial, sans-serif;
       color: white;
     }
@@ -35,7 +33,7 @@ html
       font-family: 'UnifrakturCook', cursive;
       font-size: 3em;
       margin-bottom: 20px;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* subtle shadow to make header pop */
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
 
     .button {
@@ -55,7 +53,6 @@ html
       background-color: #0056b3;
     }
 
-    /* Contact Form Styles */
     .contact-form {
       margin-top: 30px;
       background-color: rgba(0,0,0,0.6);
@@ -66,7 +63,7 @@ html
     .contact-form label {
       display: block;
       margin: 10px 0 5px;
-      color: #FFD700; /* bright yellow labels */
+      color: #FFD700;
       font-weight: bold;
     }
 
@@ -74,11 +71,11 @@ html
     .contact-form textarea {
       width: 100%;
       padding: 10px;
+      margin-bottom: 15px;
       border: none;
       border-radius: 5px;
-      margin-bottom: 15px;
       background-color: rgba(255,255,255,0.2);
-      color: #FFD700; /* bright yellow text */
+      color: #FFD700;
     }
 
     .contact-form input::placeholder,
@@ -90,7 +87,7 @@ html
     .contact-form button {
       width: 100%;
       padding: 10px;
-      background-color: #FFA500; /* bright orange button */
+      background-color: #FFA500;
       color: white;
       border: none;
       border-radius: 5px;
@@ -99,7 +96,7 @@ html
     }
 
     .contact-form button:hover {
-      background-color: #FF8C00; /* slightly darker orange */
+      background-color: #FF8C00;
     }
   </style>
 </head>
@@ -113,6 +110,24 @@ html
 
     <a href="#" class="button">Learn More</a>
 
-    <!-- Contact Form -->
     <div class="contact-form">
-      <h2 style="color:white; text-align:center;">Conta
+      <h2 style="color:white; text-align:center;">Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="David Minch" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="davidminch612@gmail.com" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" value="615-755-3657" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
