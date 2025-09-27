@@ -1,9 +1,12 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>All Sons IV Family Homes</title>
+
+  <!-- Import Old English / Gothic font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -25,6 +28,13 @@ html
       text-align: justify;
     }
 
+    h1 {
+      text-align: center;
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
     .button {
       display: block;
       width: 200px;
@@ -42,28 +52,84 @@ html
       background-color: #0056b3;
     }
 
-    .audio-player {
+    /* Contact Form Styles */
+    .contact-form {
+      margin-top: 30px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-form label {
       display: block;
-      margin: 20px auto;
+      margin: 10px 0 5px;
+      color: #FFD700; /* bright yellow labels */
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background-color: rgba(255,255,255,0.2);
+      color: #FFD700; /* bright yellow text */
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #FFD700;
+      opacity: 1;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #FFA500; /* bright orange button */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #FF8C00; /* slightly darker orange */
     }
   </style>
 </head>
 <body>
   <div class="content">
-    <h1 style="text-align:center;">All Sons IV Family Homes</h1>
+    <h1>All Sons IV</h1>
     <p>
       This is a family owned and operated company always on the look to expand, we strive to bring you not just a house but a true home! 
       This started as just a one-time flip out in Westmoreland, TN and grew into something that has really brought the joy of being able to bring the perfect home to people just like you and me!
     </p>
 
-    <!-- Optional Contact Button -->
-    <a href="#" class="button">Contact Us</a>
+    <a href="#" class="button">Learn More</a>
 
-    <!-- Optional Audio Player -->
-    <audio class="audio-player" controls>
-      <source src="johnnycash.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2 style="color:white; text-align:center;">Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="David Minch">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="davidminch612@gmail.com">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" value="615-755-3657">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>
+
