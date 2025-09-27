@@ -1,3 +1,5 @@
+html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +35,7 @@
       font-family: 'UnifrakturCook', cursive;
       font-size: 3em;
       margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* subtle shadow to make header pop */
     }
 
     .button {
@@ -112,24 +115,4 @@
 
     <!-- Contact Form -->
     <div class="contact-form">
-      <h2 style="color:white; text-align:center;">Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="David Minch">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="davidminch612@gmail.com">
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" value="615-755-3657">
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </div>
-</body>
-</html>
-
+      <h2 style="color:white; text-align:center;">Conta
