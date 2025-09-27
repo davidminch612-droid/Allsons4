@@ -1,12 +1,11 @@
-html
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>All Sons IV Family Homes</title>
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <!-- Cursive Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -30,7 +29,7 @@ html
 
     h1 {
       text-align: center;
-      font-family: 'UnifrakturCook', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 3em;
       margin-bottom: 20px;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
